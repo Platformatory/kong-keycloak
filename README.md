@@ -45,5 +45,5 @@ Keycloak UI can be accessed at `http://localhost:8080` with the credentials `adm
 
 # TODO
 - [ ] multiple KC instances
-- [ ] How to integrate with OSS OIDC plugin
+- [x] How to integrate with OSS OIDC plugin
 - [ ] multiple DPs 
