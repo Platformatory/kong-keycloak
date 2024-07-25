@@ -2,12 +2,23 @@
 
 This serves as a sandbox to play with Kong hybrid and Keycloak.
 
+
+# Prerequisites
+
+Tools needed:
+1. docker, docker-compose
+2. make
+3. jq(optional)
+
+Clone the [Keycloak OIDC OSS plugin](https://github.com/Platformatory/kong-plugin-jwt-keycloak) and run `make build`. This will create the `telekom-digioss/kong-plugin-jwt-keycloak:3.7.1` image.
+
 # How to setup
 
 ```
-$ docker-compose build
 $ docker-compose up
 ```
+
+This will bring up Kong CP, DP, keycloak and 1 Postgres instance each for Kong and Keycloak.
 
 # Accessing kong
 
