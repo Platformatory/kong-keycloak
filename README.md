@@ -15,7 +15,7 @@ Clone the [Keycloak OIDC OSS plugin](https://github.com/Platformatory/kong-plugi
 # How to setup
 
 ```
-$ docker-compose up
+$ docker-compose up -d
 ```
 
 This will bring up Kong CP, DP, keycloak and 1 Postgres instance each for Kong and Keycloak.
@@ -36,6 +36,15 @@ Proxy can be accessed at 8000.
 
 ```
 $ curl -X GET -H "Authorization: Bearer ${ACCESS_TOKEN}" http://localhost:8000/app/anything/hello
+```
+
+## Testing
+
+```bash
+./setup_kong.sh
+sleep 60
+./setup_keycloak.sh
+./test_flow.sh
 ```
 
 # Accessing Keycloak
